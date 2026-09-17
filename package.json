@@ -1,0 +1,25 @@
+{
+  "name": "t3n-consent-triage-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A consent-first, offline ticket triage agent with an opt-in Terminal 3 trust check.",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "tsx --test tests/triage.test.ts",
+    "triage": "tsx src/cli.ts",
+    "verify:t3n": "node --env-file-if-exists=.env.local --import tsx src/verify-t3n.ts"
+  },
+  "dependencies": {
+    "@terminal3/t3n-sdk": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.7.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
