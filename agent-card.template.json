@@ -1,0 +1,17 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Consent Triage Agent",
+  "description": "Classifies enterprise support tickets into safe next steps. It does not send messages, change records, or execute payments without a separately granted capability.",
+  "services": [
+    {
+      "name": "DID",
+      "endpoint": "did:t3n:REPLACE_AFTER_AUTHENTICATION",
+      "version": "v1"
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [],
+  "supportedTrust": ["tee-attestation"]
+}
+
